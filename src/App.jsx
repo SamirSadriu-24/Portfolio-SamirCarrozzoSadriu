@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Portfolio-SamirCarrozzoSadriu">
         <MyNavbar />
         <Routes>
           <Route path='/' element={<MyHomePage />} />
