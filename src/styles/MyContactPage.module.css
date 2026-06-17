@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
 }
 
 .container {
@@ -44,7 +45,7 @@
 
 
 .card {
-    flex: 1;
+    flex: 1 1 250px;
     min-height: 50px;
     background-color: var(--background-secondario-card);
 }
@@ -52,7 +53,7 @@
 .corpocarta {
     height: 100%;
     border: 1px solid var(--testo-secondario);
-    padding: 10px;
+    padding: 15px;
     border-radius: 12px;
 
     display: flex;
@@ -66,6 +67,7 @@
         color: var(--testo-primario);
         text-decoration: none;
         transition: all 0.3s ease;
+        width: 100%;
     }
 
     a:visited {
@@ -83,6 +85,7 @@
 &:hover {
     a {
         color: var(--font-codice);
+        transform: translateY(-2px);
     }
 }
 
@@ -94,5 +97,39 @@
 .testi {
     .titolo {
         margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95vw;
+        padding: 20px 15px;
+    }
+
+    .contatti {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        flex: none;
+    }
+
+    .corpocarta {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        min-height: 90px;
+    }
+
+    .icona {
+        font-size: 1.8rem;
+        flex-shrink: 0;
+    }
+
+    .testi {
+        flex: 1;
     }
 }

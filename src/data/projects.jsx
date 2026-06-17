@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "Booroad",
-    image: "/images/booroad.png",
+    image: `${import.meta.env.BASE_URL}/images/booroad.png`,
     description: "Sito creato per simulare la gestione dei viaggi per un'agenzia.",
     technologies: [
       "react",
@@ -16,7 +16,7 @@ export const projects = [
   {
     id: 2,
     title: "NeonPress",
-    image: "/images/neonpress.png",
+    image: `${import.meta.env.BASE_URL}/images/neonpress.png`,
     description: "Sito che simula un giornale digitale che permette di accedere a determinati servizi (aggiungere, eliminare o modificare articoli e giornalisti) a seconda del ruolo assegnato.",
     technologies: [
       "java",
@@ -31,7 +31,7 @@ export const projects = [
   {
     id: 3,
     title: "Boolflix",
-    image: "/images/matrix.png",
+    image: `${import.meta.env.BASE_URL}/images/matrix.png`,
     description: "Sito che tramite una api esterna si occupa di caricare titoli di film richiesti dall'utente nella barra di ricerca.",
     technologies: [
       "html",

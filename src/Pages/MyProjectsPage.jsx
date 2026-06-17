@@ -21,8 +21,11 @@ function MyProjectsPage() {
 
                 {projects.map(project => (
                     <Card key={project.id} className={styles.projectCard}>
-                        <Card.Img variant='top' src={project.image} />
-                        <Card.Body>
+                        <Card.Img
+                            variant="top"
+                            src={project.image}
+                            className={styles.projectImage}
+                        />                        <Card.Body>
                             <Card.Title className={styles.titolo}>
                                 {project.title}
                             </Card.Title>
