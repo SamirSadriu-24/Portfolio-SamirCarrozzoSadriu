@@ -1,0 +1,98 @@
+.background {
+    background-color: var(--background-primario);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: min(1200px, 90vw);
+    height: auto;
+    min-height: 80vh;
+    border: 1px solid var(--testo-primario);
+    border-radius: 15px;
+    background-color: var(--background-secondario-card);
+    font-family: var(--font-corpo);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.titolo {
+    font-family: var(--font-titoli);
+    color: var(--testo-primario);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.code {
+    font-family: var(--font-codice);
+    color: var(--testo-secondario);
+    font-size: larger;
+}
+
+.subtitolo {
+    color: var(--testo-secondario);
+}
+
+.contatti {
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+
+.card {
+    flex: 1;
+    min-height: 50px;
+    background-color: var(--background-secondario-card);
+}
+
+.corpocarta {
+    height: 100%;
+    border: 1px solid var(--testo-secondario);
+    padding: 10px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    color: var(--testo-primario);
+
+
+    a {
+        color: var(--testo-primario);
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    a:visited {
+        color: var(--testo-primario);
+    }
+
+    &:hover a {
+        color: var(--testo-primario);
+        font-size: 1rem;
+        font-family: var(--font-codice);
+    }
+
+}
+
+&:hover {
+    a {
+        color: var(--font-codice);
+    }
+}
+
+.icona {
+    color: var(--colore-quote);
+    font-size: 2rem;
+}
+
+.testi {
+    .titolo {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,202 @@
+.background {
+    background-color: var(--background-primario);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    background-color: var(--background-secondario-card);
+    width: min(1200px, 90vw);
+    min-height: 80vh;
+    border: 1px solid var(--testo-primario);
+    border-radius: 15px;
+    font-family: var(--font-corpo);
+    padding: 30px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 20px;
+}
+
+.titolo {
+    color: var(--testo-primario);
+    font-weight: var(--weight-bold);
+    font-family: var(--font-titoli);
+}
+
+.code {
+    font-family: var(--font-codice);
+    color: var(--testo-secondario);
+}
+
+.scritte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.projectCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--background-primario);
+    border: 1px solid var(--colore-quote);
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+    padding: 20px;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+}
+
+.projectCard img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.projectCard :global(.card-body) {
+    flex: 1;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.quote {
+    color: var(--colore-quote);
+}
+
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 1rem 0;
+}
+
+.stack span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--colore-icone);
+    background-color: var(--background-secondario-card);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.button {
+    display:inline-flex;
+    align-items: center;
+    gap:8px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid var(--testo-secondario);
+    border-radius: 12px;
+    background-color: var(--colore-icone);
+    color:white;
+    transition: 0.2s;
+}
+
+.button:visited {
+    color: white;
+}
+
+.button:hover {
+    background-color: var(--colore-quote);
+    color: var(--colore-icone);
+}
+
+.goBack {
+    background-color: var(--background-primario);
+    padding: 10px 16px;
+    border-radius: 12px;
+    align-self: center;
+    color: var(--testo-secondario);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.2s;
+
+    &&.goBack:hover {
+        background-color: var(--colore-quote);
+        color: var(--colore-bottoni);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95vw;
+        padding: 20px;
+    }
+
+    .projectCard {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projectCard img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .scritte {
+        align-items: center;
+        text-align: center;
+    }
+
+    .stack {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .projectCard {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .titolo {
+        font-size: 1.5rem;
+    }
+
+    .stack span {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .goBack {
+        width: 100%;
+        text-align: center;
+    }
+}

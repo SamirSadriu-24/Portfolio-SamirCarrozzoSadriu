@@ -1,0 +1,155 @@
+.background {
+    background-color: var(--background-primario);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--background-secondario-card);
+    width: min(1200px, 90vw);
+    min-height: 80vh;
+    border: 1px solid var(--testo-primario);
+    border-radius: 15px;
+    font-family: var(--font-corpo);
+    padding: 40px 35px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.code {
+    font-family: var(--font-codice);
+    color: var(--testo-secondario);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.titolo {
+    font-family: var(--font-titoli);
+    color: var(--testo-primario);
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.bio {
+    color: var(--testo-secondario);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    max-width: 620px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-left: 20px;
+    border-left: 2px solid var(--testo-secondario);
+    position: relative;
+}
+
+.timelineOggetto {
+    display: flex;
+    gap: 18px;
+    position: relative;
+}
+
+.timelinePunto{
+    width: 12px;
+    height: 12px;
+    background-color: var(--colore-bottoni);
+    border-radius: 50%;
+    position: absolute;
+    left: -27px;
+    top: 6px;
+}
+
+.timelineTempo {
+    font-family: var(--font-codice);
+    color: var(--testo-secondario);
+    font-size: 0.9rem;
+    margin: 0 0 4px 0;
+}
+
+.timelineTesto {
+    color: var(--testo-primario);
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.interestsGrid {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 14px;       
+}
+
+.interestCard {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-primario);
+    border: 1px solid var(--testo-secondario);
+    border-radius: 12px;
+    padding: 18px 16px;
+    transition: all 0.3s ease;
+    flex: 1 1 160px;
+}
+
+.interestCard:hover {
+    transform: translateY(-4px);
+    border-color: var(--colore-bottoni);
+}
+
+.interestCard i {
+    font-size: 2rem;
+    color: var(--colore-quote);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.interestCard p {
+    margin: 0;
+    color: var(--testo-primario);
+    font-weight: 500;
+}
+
+.goBack{
+    background-color: var(--background-primario);
+    padding: 10px;
+    border-radius: 12px;
+    align-self: center;
+    color: var(--testo-secondario);
+    font-size: larger;
+    &&.goBack:hover{
+        background-color: var(--colore-quote);
+        color:var(--colore-bottoni);
+    }
+}
+
+.goBack:hover {
+    background-color: var(--colore-bottoni);
+    color: var(--background-primario);
+    border-color: var(--colore-bottoni);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    .titolo {
+        font-size: 1.8rem;
+    }
+}

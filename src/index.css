@@ -1,0 +1,24 @@
+@import url('https://googleapis.com');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-primario: #2A2420;
+  --background-secondario-card: #352E29;
+  --testo-primario: #F0E6D6;
+  --testo-secondario: #A89B8C;
+  --colore-bottoni: #E8A33D;
+  --colore-quote: #5B7C99;
+  --colore-icone: #c0563B;
+
+  --font-titoli: 'Spectral', Georgia, serif;
+  --font-corpo: 'Inter', system-ui, sans-serif;
+  --font-codice: 'JetBrains Mono', monospace;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 600;
+}
